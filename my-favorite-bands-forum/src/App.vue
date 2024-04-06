@@ -1,5 +1,9 @@
 <script>
+  import BaseCounter from '/src/components/BaseCounter.vue'
   export default {
+    components:{
+      BaseCounter,
+    },
     data() {
           return {
             band: {
@@ -64,6 +68,8 @@
 </script>
 
 <template>
+  <BaseCounter/>
+  <hr>
   <h2>Statistics</h2>
   <ul>
     <li v-for="(value, key) in bandStatistics"
